@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
+    <link
+      rel="preload"
+      href="../../assets/fonts/georgia/Georgia.woff"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="../../assets/fonts/arial/Arial-ItalicMT.woff"
+      as="font"
+    />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -22,7 +32,8 @@
             <ul class="nav-list">
               <li class="nav-item">
                 <a class="nav-link nav-link__active" href="../main/index.html"
-                  >About the shelter</a>
+                  >About the shelter</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pets/index.html">Our pets</a>
@@ -38,16 +49,16 @@
         </header>
         <div class="start-screen-main">
           <div class="start-screen-main-text">
-            <h1 class="start-screen-title">
+            <h2 class="start-screen-title">
               Not only people <br />
               need a house
-            </h1>
+            </h2>
             <p class="start-screen-description">
               We offer to give a chance to a little and nice puppy with an
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <a class="button-start-screen" href="#~">Make a friend</a>
+            <a class="button-start-screen" href="#ourfriends">Make a friend</a>
           </div>
           <div class="start-screen-main-dog">
             <img src="../../assets/images/start-screen-puppy.png" alt="dog" />
@@ -81,7 +92,7 @@
         </div>
       </div>
     </section>
-    <section class="pets-section">
+    <section class="pets-section" id="ourfriends">
       <div class="wrapper">
         <div class="pets-content">
           <h3 class="heading-pets-section">
@@ -113,13 +124,14 @@
             </button>
           </div>
           <div>
-            <a class="button-pets-content" href="#~">Get to know the rest</a>
+            <a class="button-pets-content" href="../pets/index.html"
+              >Get to know the rest</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="help-section">
-      <a name="help"></a>
+    <section class="help-section" id="help">
       <div class="wrapper">
         <div class="help-content">
           <h3 class="heading-help">How you can help <br />our shelter</h3>
@@ -174,11 +186,10 @@
               make a donation
             </h3>
             <p class="bank-donation">Name of the bank / Type of bank account</p>
-            <div class="account-info">
-              <img src="../../assets/images/credit-card.svg" alt="">
-              <a href="#~" class="number-donation">8380 2880 8028 8791 7435
-              </a>
-            </div>
+            <a href="#~" class="account-info">
+              <img src="../../assets/images/credit-card.svg" alt="" />
+              <p class="number-donation">8380 2880 8028 8791 7435</p>
+            </a>
             <p class="text-donation">
               Legal information and lorem ipsum dolor sit amet, consectetur
               adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
@@ -189,38 +200,73 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <a name="contacts"></a>
+    <footer class="footer" id="contacts">
       <div class="wrapper">
         <div class="footer-content">
           <div class="icon-text">
-          <div class="contacts">
-            <h3 class="contact-title">For questions <br> and suggestions</h3>
-            <div class="icon-email">
-              <img src="../../assets/images/mail.png" alt="mail">
-              <a href="mailto:email@shelter.com" class="email">email@shelter.com
-              </a>
+            <div class="contacts">
+              <h3 class="contact-title">
+                For questions <br />
+                and suggestions
+              </h3>
+              <div class="icon-email">
+                <a href="mailto:email@shelter.com" class="email">
+                  <img
+                    src="../../assets/images/mail.png"
+                    class="icon-img"
+                    alt="mail"
+                  />
+                  email@shelter.com
+                </a>
+              </div>
+              <div class="icon-phone">
+                <a href="tel:+136745677554" class="phone">
+                  <img
+                    src="../../assets/images/phone.png"
+                    class="icon-img-phone"
+                    alt="phone"
+                  />
+                  +13 674 567 75 54
+                </a>
+              </div>
             </div>
-            <div class="icon-phone">
-              <img src="../../assets/images/phone.png" alt="mail">
-              <a href="tel:+136745677554" class="phone">+13 674 567 75 54</a>
+            <div class="location">
+              <h3 class="contact-title-location">
+                We are waiting <br />
+                for your visit
+              </h3>
+              <div class="icon-boston">
+                <a
+                  href="https://goo.gl/maps/3tGtfB3QJXiTjYdw8"
+                  class="boston"
+                  target="_blank"
+                >
+                  <img
+                    src="../../assets/images/icon-marker.png"
+                    alt="boston"
+                    class="icon-boston-img"
+                  />
+                  1 Central Street, Boston <br />(entrance from the store)</a
+                >
+              </div>
+              <div class="icon-london">
+                <a
+                  href="https://goo.gl/maps/3tGtfB3QJXiTjYdw8"
+                  class="london"
+                  target="_blank"
+                  ><img
+                    src="../../assets/images/icon-marker.png"
+                    alt="london"
+                    class="icon-london-img"
+                  />
+                  18 South Park, London
+                </a>
+              </div>
             </div>
           </div>
-          <div class="location">
-            <h3 class="contact-title-location">We are waiting <br> for your visit</h3>
-          <div class="icon-boston">
-            <img src="../../assets/images/icon-marker.png" alt="boston">
-            <a href="https://goo.gl/maps/3tGtfB3QJXiTjYdw8" class="boston" target="_blank">1 Central Street, Boston <br>(entrance from the store)</a>
+          <div class="footer-puppy">
+            <img src="../../assets/images/footer-puppy.png" alt="dog" />
           </div>
-          <div class="icon-london">
-            <img src="../../assets/images/icon-marker.png" alt="london">
-            <a href="https://goo.gl/maps/3tGtfB3QJXiTjYdw8" class="london" target="_blank">18 South Park, London  </a>
-          </div>
-        </div>
-      </div>
-        <div class="footer-puppy">
-          <img src="../../assets/images/footer-puppy.png" alt="dog" />
-        </div>
         </div>
       </div>
     </footer>
