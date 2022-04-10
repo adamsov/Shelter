@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .our-pets {
+    padding: 30px 40px 0 40px;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  
+  .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-link{
+    display: block;
+    text-decoration: none;
+  }
+
+  .cozy {
+    display: flex;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.061em;
+    margin-bottom: 10px;
+    color: #545454;
+  }
+  
+  .shelter_boston {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;    
+    display: flex;
+    letter-spacing: 0.1em;
+    color: #292929;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-link {
+    display: block;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.07px;
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #292929;
+  }
+
+  .nav-item {
+    margin-right: 35px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-link__active {
+    color: #292929;
+    border-bottom: 3px solid #F1CDB3;
+  }
+
+  .our-pets-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    background-color: #F6F6F6;
+  }
+  
+  .our-pets-heading {
+    text-align: center;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+
+  /* cards */
+.our-pets-section {
+    background-color: #F6F6F6;
+  }
+  .our-pets-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards_container {
+    padding-bottom: 60px;
+  }
+  
+  .our-pets-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 59px;
+  }
+  
+  .our-pets-slider__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 9px 9px 0px 0px;
+  }
+  
+  .card img {
+    display: block;
+  }
+  
+  .card:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .card:hover .button-pets {
+    background: #FDDCC4;
+    border-color: #FDDCC4;
+  }
+  
+  .name-pets {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
+  
+  .button-pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #292929;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.045em;
+    margin-bottom: 30px;
+  }
+  
+  .button-pets:hover {
+    background: #FDDCC4;
+    border-color: #FDDCC4;
+  }
+
+  .button-page-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F1CDB3;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929
+  }
+
+.button-page-number.disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  cursor: unset;
+  pointer-events: none;
+}
+
+  .our-pets-navigation {
+    display: flex;
+  
+    gap: 20px;
+    padding-bottom: 100px;
+  }
+  
+  .button-page-number__right img {
+    transform: rotate(180deg);
+  }
+  
+  .button-page-number:hover {
+    background: #FDDCC4;
+    border-color: #FDDCC4;
+  }
+  
+  .button-page-number.active {
+    background: #F1CDB3;
+    border-color: #F1CDB3;
+  }
+
+  .button-page-number.active:hover {
+    background: #FDDCC4;
+    border-color: #FDDCC4;
+  }
+
+  /* footer */
+  .footer {
+    background: url(../../assets/images/footer-gradient-background.png) no-repeat center;
+    background-size:cover;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon-text {
+    display: flex;
+    margin-top: 56px;
+  }
+  
+  .contacts:first-child {
+    margin-right: 160px;
+  }
+  
+  .contact-title {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.061em;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+  }
+  .contact-title-location {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.061em;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+  }
+  
+  .email{
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    text-decoration: none;
+  }
+  
+  .icon-email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 43px;
+  }
+  
+  .icon-email img {
+    margin-right: 20px;
+  }
+  
+  .icon-phone {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-phone img {
+    margin-right: 20px;
+  }
+  
+  .phone {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    text-decoration: none;
+  }
+  
+  .boston {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    text-decoration: none;
+  }
+  
+  .london {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    text-decoration: none;
+    }
+  
+  .icon-boston img{
+      margin-right: 20px;
+  }
+  
+  .icon-london img {
+    margin-right: 20px;
+  }
+  
+  .icon-boston {
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+  
+  .icon-london {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-puppy img {
+    display: block;
+    margin-top: 40px;
+  }
