@@ -14,7 +14,7 @@ h1 {
 }
 
 .start-screen {
-  padding: 60px 40px 0 40px;
+  padding-top: 60px;
   background: url(../../assets/images/start-screen-gradient-background.png) no-repeat center;
   width: 100%;
   background-size: cover;
@@ -386,7 +386,14 @@ color: #545454;
 margin-top: 30px;
 }
 
-.items img {
+.item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.item-img img {
   display: block;
 }
 
@@ -588,3 +595,127 @@ margin-top: 30px;
   margin-top: 41px;
 }
   
+/* Size 768 - 1279 */
+@media (max-width: 1279px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .start-screen {
+    padding-top: 30px;
+  }
+
+  .nav-link {
+    line-height: 23px;
+  }
+
+  .start-screen-main {
+    display: block;
+  }
+
+  .start-screen-main-text {
+    margin-top: 0;
+  }
+
+  .start-screen-main-text {
+    margin: 0 auto;
+    max-width: 460px;
+  }
+
+  .button-start-screen {
+    margin: 0 auto;
+  }
+
+  .start-screen-main-dog {
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+  }
+
+  .start-screen-main-dog img{
+    width: 569px;
+  }
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content-text {
+    margin: 0px;
+    margin-bottom: 80px;
+  }
+
+  .subheading {
+    line-height:159%;
+  }
+
+  .slider__inner {
+    width: 580px;
+    overflow-x: hidden;
+  }
+
+  .card {
+    margin-right: 40px;
+  }
+
+  .list {
+    column-gap: 60px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 170px;
+  }
+
+
+
+
+
+  .donation-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content {
+    margin: 0px;
+    margin-bottom: 60px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .icon-text {
+    margin: 30px 34px 63px 34px;
+  }
+ 
+  .contacts {
+    margin: 0px;
+  }
+
+  .location {
+    margin-left: 59px;
+  }
+
+  .contact-title-location {
+    margin-bottom: 31px;
+  }
+
+  .contacts:first-child  {
+    margin: 0px;
+  }
+
+  .footer-puppy {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-puppy img {
+    margin: 0px;
+  }
+
+}
