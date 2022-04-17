@@ -309,10 +309,11 @@
   }
   
   .contacts:first-child {
-    margin-right: 160px;
+    margin-right: 158px;
   }
   
   .contact-title {
+    width: 280px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 35px;
@@ -321,14 +322,16 @@
     color: #FFFFFF;
     margin-bottom: 42px;
   }
+
   .contact-title-location {
+    width: 280px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.061em;
     color: #FFFFFF;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
   
   .email{
@@ -482,7 +485,9 @@
     margin: 0px;
   }
 
-  /* Size 320 - 767 */
+/* Size 320 - 767 */
+@media (max-width: 767px) {
+
   .wrapper {
     width: 100%;
     padding: 0 10px;
@@ -520,6 +525,7 @@
   }
 
   .cards_container {
+    padding: 0;
     margin-bottom: 42px;
   }
 
@@ -585,4 +591,5 @@
   .footer-puppy img {
     width: 260px;
   }
+}
 }
