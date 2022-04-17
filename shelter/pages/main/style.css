@@ -1003,6 +1003,17 @@ margin-top: 30px;
         flex-direction: column;
         justify-content: center;
         margin-left: 0;
+        width: 100%;
+      }
+
+      .boston {
+        margin: 0 auto;
+        width: 300px;
+      }
+
+      .london {
+        margin: 0 auto;
+        width: 300px;
       }
 
       .contact-title-location {

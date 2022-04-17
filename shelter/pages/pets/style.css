@@ -555,6 +555,8 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 0;
+    width: 100%;
+
   }
 
   .contact-title-location {
@@ -567,12 +569,22 @@
     width: 280px;
   }
 
+  .boston {
+    margin: 0 auto;
+    width: 300px;
+  }
+
   .icon-boston a {
     margin-bottom: 40px;
   }
   
   .icon-london {
     margin-bottom: 40px;
+  }
+
+  .london {
+    margin: 0 auto;
+    width: 300px;
   }
 
   .footer-content {
