@@ -59,6 +59,47 @@
     color: #292929;
     margin-left: 2px;
   }
+
+  .burger-header {
+    display: none;
+    position:relative;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    margin-right: 43px;
+  }
+  
+  .burger-header::before,
+  .burger-header::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  
+  .burger-header::before {
+    top: 0;
+  }
+  
+  .burger-header::after {
+    bottom: 0;
+  }
+  
+  .burger-header.active {
+    transform: rotate(90deg);
+  }
+  
+  .burger-header span {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  }
   
   .nav-list {
     display: flex;
@@ -441,4 +482,107 @@
     margin: 0px;
   }
 
+  /* Size 320 - 767 */
+  .wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .cozy {
+    line-height:38px;
+    margin-bottom: 9px;
+  }
+
+  .burger-header {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .our-pets-heading {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .cozy {
+    margin-bottom:7px;
+  }
+  
+  .our-pets-content {
+    padding-top: 42px;
+  }
+
+  .our-pets-heading {
+    margin-bottom: 12px;
+  }
+
+  .cards_container {
+    margin-bottom: 42px;
+  }
+
+  .our-pets-navigation {
+    width: 300px;
+    gap:10px;
+    padding-bottom:42px ;
+  }
+
+  .icon-text{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .contact-title {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
+    width: 280px;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .contact-title-location {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 39px;
+    width: 280px;
+  }
+
+  .icon-boston a {
+    margin-bottom: 40px;
+  }
+  
+  .icon-london {
+    margin-bottom: 40px;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .email {
+    justify-content: center;
+  }
+
+  .icon-phone {
+    justify-content: center;
+  }
+
+  .footer-puppy img {
+    width: 260px;
+  }
 }

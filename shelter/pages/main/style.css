@@ -259,6 +259,7 @@ left: 0;
 .slider__inner{
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .card {
@@ -440,7 +441,7 @@ margin-top: 30px;
 
 .donation-section {
   background-color: #F6F6F6;
-  padding: 81px 0 101px;
+  padding: 81px 0 100px;
 }
 
 .donation-content {
@@ -479,7 +480,7 @@ margin-top: 30px;
   display: flex;
   align-items: center;
   background-color: #F1CDB3;
-  padding: 10px 15px;
+  padding: 10px 14px;
   border-radius: 9px;
   margin-bottom: 20px;
   max-width: 349px;
@@ -761,7 +762,7 @@ margin-top: 30px;
 
 }
 
-/* Size 768 - 1279 */
+/* Size 320 - 767 */
 @media (max-width: 767px) {
 
   .wrapper {
@@ -771,7 +772,7 @@ margin-top: 30px;
 
   .cozy {
     line-height:38px;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
   }
 
   .burger-header {
@@ -790,7 +791,7 @@ margin-top: 30px;
 
   .start-screen-description {
     margin-top: 40px;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
 
   .start-screen-main-text {
@@ -854,6 +855,10 @@ margin-top: 30px;
       order: 1;
     }
 
+    .slider__wrapper {
+      width: 100%;
+    }
+
     .slider__inner {
       width: 270px;
       margin-bottom: 20px;
@@ -874,7 +879,6 @@ margin-top: 30px;
 
      .help-section {
       padding-top: 42px;
-
      }
 
      .heading-help {
@@ -887,7 +891,7 @@ margin-top: 30px;
        justify-content: start;
        column-gap:30px;
        row-gap: 30px;
-       margin-top: 40px;
+       margin-top: 41px;
        margin-left: 5px;
        margin-bottom: 42px;
      }
@@ -933,7 +937,7 @@ margin-top: 30px;
       }
 
       .donation-section{
-        padding-top: 42PX;
+        padding-top: 42px;
         flex-direction: column;
         align-items: center;
         text-align: center;
