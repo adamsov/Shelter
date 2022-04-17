@@ -896,11 +896,12 @@ margin-top: 30px;
      }
 
      .list {
+       margin: 0 auto;
+       width: 290px;
        justify-content: start;
-       column-gap:30px;
+       column-gap: 30px;
        row-gap: 30px;
        margin-top: 41px;
-       margin-left: 5px;
        margin-bottom: 42px;
      }
 
