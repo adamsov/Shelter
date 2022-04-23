@@ -268,6 +268,11 @@ left: 0;
   color: #545454;
 }
 
+.slider__wrapper {
+  overflow-x: hidden;
+  max-width: 990px;
+}
+
 .slider {
   display: flex;
   justify-content: space-between;
@@ -665,6 +670,7 @@ margin-top: 30px;
     width: 100%;
     padding: 0 30px;
   }
+  
 
   .start-screen {
     padding-top: 30px;
@@ -719,6 +725,11 @@ margin-top: 30px;
     line-height:160%;
   }
 
+  .slider__wrapper {
+    overflow-x: hidden;
+    max-width: 580px;
+  }
+  
   .slider__inner {
     width: 580px;
     overflow-x: hidden;
@@ -947,6 +958,12 @@ margin-top: 30px;
       letter-spacing: 0.06em;
     }
 
+    .slider__wrapper {
+      overflow-x: hidden;
+      max-width: 300px;
+    }
+
+    
     .slider {
       flex-wrap: wrap;
       justify-content: center;
