@@ -6,6 +6,8 @@ const nav = document.querySelector(".nav");
 const startScreen = document.querySelector(".start-screen");
 const navItems = document.querySelectorAll(".nav-item");
 
+let isDrawerActive = false;
+
 
 const toggleMenu = () => {
     body.classList.toggle('lock');
@@ -14,9 +16,13 @@ const toggleMenu = () => {
     burgerButton.classList.toggle('burger-header--active');
     nav.classList.toggle('nav--active');
     startScreen.classList.toggle('start-screen--active');
+    isDrawerActive = !isDrawerActive;
 }
 
 burgerButton.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
-navItems.forEach((navItems) => navItems.addEventListener('click', toggleMenu));
+
+navItems.forEach((navItems) => navItems.addEventListener('click', () => {
+    if (isDrawerActive) toggleMenu();
+}));
 
